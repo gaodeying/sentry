@@ -188,7 +188,7 @@ function MiniBarChart({
         // This keeps small datasets from looking 'scary'
         // by having full bars for < 10 values.
         if (value.max < 10) {
-          return Math.max(10, value.max);
+          return 10;
         }
         // Adds extra spacing at the top of the screen, ensuring the series doesn't hit the ceiling, leaving more empty space.
         // When the user hovers over an empty space, a tooltip with information from all series is displayed.
